@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3Ac-iu-DNW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share View Controller-->
+        <scene sceneID="ceB-am-kn3">
+            <objects>
+                <viewController id="j1y-V4-xli" customClass="ShareViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8bI-gs-bmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="d5i-Ba-RvD"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="wbc-yd-nQP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AL7-e7-Ts4">
+                                <rect key="frame" x="0.0" y="433" width="600" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="jvz-qu-vLs"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="j1y-V4-xli" id="uoB-kP-fLm"/>
+                                    <outlet property="delegate" destination="j1y-V4-xli" id="Sw1-bv-eqK"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oqm-RK-1rM">
+                                <rect key="frame" x="64" y="157" width="473" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose Group" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dou-op-7Pj">
+                                <rect key="frame" x="64" y="249" width="473" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="chooseGroup:" destination="j1y-V4-xli" eventType="editingDidEnd" id="boL-6X-3WQ"/>
+                                    <outlet property="delegate" destination="j1y-V4-xli" id="2va-9e-3BK"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AL7-e7-Ts4" firstAttribute="centerX" secondItem="wbc-yd-nQP" secondAttribute="centerX" id="41K-9z-471"/>
+                            <constraint firstItem="Oqm-RK-1rM" firstAttribute="width" secondItem="dou-op-7Pj" secondAttribute="width" id="EmK-WQ-iFd"/>
+                            <constraint firstItem="Oqm-RK-1rM" firstAttribute="top" secondItem="8bI-gs-bmD" secondAttribute="bottom" constant="93" id="J2Y-lR-F3L"/>
+                            <constraint firstItem="dou-op-7Pj" firstAttribute="top" secondItem="Oqm-RK-1rM" secondAttribute="bottom" constant="62" id="M8G-q3-Sf4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oqm-RK-1rM" secondAttribute="trailing" constant="43" id="V2A-gl-a8L"/>
+                            <constraint firstItem="AL7-e7-Ts4" firstAttribute="leading" secondItem="wbc-yd-nQP" secondAttribute="leadingMargin" constant="-20" id="V9q-Re-5mq"/>
+                            <constraint firstItem="dou-op-7Pj" firstAttribute="leading" secondItem="wbc-yd-nQP" secondAttribute="leadingMargin" constant="44" id="gT0-tW-WyA"/>
+                            <constraint firstItem="Oqm-RK-1rM" firstAttribute="leading" secondItem="wbc-yd-nQP" secondAttribute="leadingMargin" constant="44" id="kZC-qi-P1g"/>
+                            <constraint firstItem="AL7-e7-Ts4" firstAttribute="top" secondItem="dou-op-7Pj" secondAttribute="bottom" constant="154" id="mNC-Ox-Jx3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AL7-e7-Ts4" secondAttribute="trailing" constant="-20" id="mk7-zb-hGo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="v7Z-hi-Pfv">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CMu-Iw-bkn">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cancelButton:" destination="j1y-V4-xli" id="5On-nd-XOr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="c4h-mQ-St9">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="shareButton:" destination="j1y-V4-xli" id="6y5-dY-2RI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="MessageText" destination="Oqm-RK-1rM" id="bDd-zU-gKp"/>
+                        <outlet property="groupPicker" destination="AL7-e7-Ts4" id="ECP-dg-jwZ"/>
+                        <outlet property="groupText" destination="dou-op-7Pj" id="EGM-9f-MUg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEy-Cv-SGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1351" y="97"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eHn-iC-wjC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Ac-iu-DNW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RPv-4a-b30">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.47843137254901963" green="0.6705882352941176" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j1y-V4-xli" kind="relationship" relationship="rootViewController" id="i6I-Vx-INk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bdd-Nn-35H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="539" y="97"/>
+        </scene>
+    </scenes>
+</document>

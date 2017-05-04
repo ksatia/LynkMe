@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8043B2E6-B8D8-4784-ABC5-D24472505E70</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Annotator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9EFAC0533D4BDA738013FD942B6D801832350C50</key>
+		<string>https://github.com/brl214/Annotator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Annotator.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9EFAC0533D4BDA738013FD942B6D801832350C50</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/brl214/Annotator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9EFAC0533D4BDA738013FD942B6D801832350C50</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9EFAC0533D4BDA738013FD942B6D801832350C50</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Annotator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

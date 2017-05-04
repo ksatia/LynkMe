@@ -1,0 +1,50 @@
+PODS:
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Crashlytics (3.3.1)
+  - EAIntroView (2.7.4):
+    - EARestrictedScrollView (~> 0.2.0)
+  - EARestrictedScrollView (0.2.0)
+  - Fabric (1.5.1):
+    - Fabric/Base (= 1.5.1)
+  - Fabric/Base (1.5.1)
+  - MBProgressHUD (0.9.1)
+  - SWTableViewCell (0.3.7)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - Crashlytics
+  - EAIntroView (~> 2.7.0)
+  - Fabric
+  - MBProgressHUD (~> 0.9.1)
+  - SWTableViewCell (~> 0.3.7)
+
+SPEC CHECKSUMS:
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  Crashlytics: 0e61bdda9def51f1e99720f804eebe94865442b2
+  EAIntroView: 50b85eedf414260e61330070ffe5947e72493a62
+  EARestrictedScrollView: f86d61e16c61d3e93c84f8e96e83122a2a3b7631
+  Fabric: 03c3b3fe77e11a2bc31421b989a9c7adaa4779a5
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+
+COCOAPODS: 0.38.2
